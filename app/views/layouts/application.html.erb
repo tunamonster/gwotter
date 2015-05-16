@@ -3,25 +3,15 @@
 <head>
   <title><%=full_title(yield(:title))%></title>
 
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+<%=render 'layouts/shim' %>  <!--all the javascript initializing bullshit-->
+
 </head>
 <body>
-<header class="navbar navbar-fixed-top navbar-inverse">
-  <div class="container">
-    <%= link_to "AVIATO", '/', id: "logo" %>
-    <nav>
-      <ul class ="nav navbar-nav navbar-right">
-        <li><%= link_to "Home", '/' %></li>
-        <li><%= link_to "Help", '/static_pages/help' %></li>
-        <li><%= link_to "Log in", '#' %></li>
-      </ul>
-    </nav>
-</div>
-</header>
+  <%= render 'layouts/header' %> <!-- links to about, home, contact-->
+
 <div class="container">
 <%= yield %>
+<%= render 'layouts/footer' %>
 </div>
 </body>
 </html>
