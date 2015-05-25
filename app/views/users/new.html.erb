@@ -1,2 +1,27 @@
-<h1>Sign up page in progress</h1>
-<p>Check back l8er for something gr8er</p>
+<% provide(:title, 'sign up nigga') %>
+<h1> Sign up </h1>
+<div class = "row">
+  <div class = "col-md-6 col-md-offset-3">
+    <%=form_for(@user) do |f| %>
+    <%= render 'shared/error_messages'%>
+
+    <%=f.label :name, "Slut" %>
+    <%=f.text_field :name, class: "form-control" %>
+
+    <%=f.label :email %>
+    <%=f.email_field :email, class: "form-control" %>
+
+    <%=f.label :password  %>
+    <br>
+    <tiny> Must contain at least 5 characters </tiny>
+    <%=f.password_field :password, class: "form-control" %>
+
+    <%=f.label :password_confirmation %>
+    <%=f.password_field :password_confirmation, class: "form-control"%>
+
+    <%=f.submit "Create my account", class: "btn btn-primary" %>
+
+    <% end %>
+
+</div>
+</div>
