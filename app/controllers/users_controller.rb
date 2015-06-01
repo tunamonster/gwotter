@@ -11,8 +11,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
+      log_in @user
       redirect_to @user
-      flash[:success] = "Welcome to Porthub!"
+      flash[:success] = "That's right nigguh it even logs you in automaticaly"
     else
       render 'new'
     end

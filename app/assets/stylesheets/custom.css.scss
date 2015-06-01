@@ -9,9 +9,14 @@
 body{
   padding-top: 60px;
 
-
+}
+body.home {
+    background: url("http://www.mamashealth.com/green/images/buygreenenergy.jpg")
 }
 
+.jumbotron{
+  opacity: 0.9;
+}
 section{
   overflow: auto;
 }
@@ -48,12 +53,7 @@ h2 {
   font-weight: normal;
   color: #777;
 }
-body.gilfoyle {
-    background: url("http://i.ytimg.com/vi/2-OQhot_ml0/maxresdefault.jpg")
 
-
-
-}
 p {
   font-size: 1.1em;
   line-height: 1.7em;
