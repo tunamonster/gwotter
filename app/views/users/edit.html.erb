@@ -1,6 +1,6 @@
-<% provide(:title, 'sign up nigga') %>
-<h1> Sign up </h1>
-<h2> ATTENTION USER: ABSOLUTELY NO FUN ALLOWED PAST THIS POINT </h2>
+<% provide(:title, "Edit Profile") %>
+<h1> Update your profile </h1>
+
 <div class = "row">
   <div class = "col-md-6 col-md-offset-3">
     <%=form_for(@user) do |f| %>
@@ -19,16 +19,13 @@
 
     <%=f.label :password_confirmation %>
     <%=f.password_field :password_confirmation, class: "form-control"%>
-    <div class="checkbox">
-    <label>
-      <li><input type="checkbox"> My name starts with a K.</li>
-      <li><input type="checkbox"> My hair is nappy.</li>
-      <li><input type="checkbox"> My dick is big, my nose is round and wide. </li>
-    </label>
-  </div>
-    <%=f.submit "Create my account", class: "btn btn-primary" %>
 
+    <%=f.submit "Save changes", class: "btn btn-primary" %>
     <% end %>
 
-</div>
+    <div class="gravatar_edit">
+      <%= gravatar_for @user %>
+      <a href="http://gravatar.com/emails" target="_blank">change</a>
+    </div>
+  </div>
 </div>
