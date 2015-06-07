@@ -4,9 +4,9 @@ class StaticPagesControllerTest < ActionController::TestCase
 
   def setup
     if :title == nil
-    @base_title = " Ruby on Rails Tutorial App"
+    @base_title = " Aviato"
   else
-    @base_title = " | Ruby on Rails Tutorial App"
+    @base_title = " | Aviato"
   end
   end
 
