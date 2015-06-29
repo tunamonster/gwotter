@@ -2,7 +2,10 @@
 <div class="row">
   <aside class="col-md-4"
   <section class="user-info">
-<%= @user.name %>, <%= @user.email %>
+<%= @user.name %>,
+<%= @user.email %>,
+<%= @user.activated ? "activated" : "NACTIVATED" %>
+
   <h3>
   <%= gravatar_for @user %>
   <%= @user.name %>
