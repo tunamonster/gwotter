@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+
+
+ten_minutes_ago:
+  content: "I just took a bath"
+  created_at: <%= 10.minutes.ago %>
+
+three_years_ago:
+  content: "I feel the need to share mundane nessages with the world through this wonderful creation called the internet"
+  created_at: <%= 3.years.ago %>
+
+most_recent:
+  content: "I just ate an orange"
+  created_at: <%= Time.zone.now %>
