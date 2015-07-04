@@ -180,6 +180,7 @@ input, textarea, select, .uneditable-input { //where is .uneditable defined?
     padding-top: 0;
   }
   .content {
+    font-size: 150%;
     display: block;
     margin-left: 60px;
     img {
@@ -216,3 +217,5 @@ span.picture {
 /*input {
   height: auto !important;
 } */
+
+

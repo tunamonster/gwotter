@@ -5,6 +5,9 @@ def setup
   @user = users(:david)
 end
 
+test "redirect to front page when logged in" do 
+#
+end
 
 
 

@@ -10,7 +10,7 @@
   <%= gravatar_for @user %>
   <%= @user.name %>
 </h3>
-<div class = "col-md-8 col-md-offset-12">
+<div class = "col-md-8">
   <% if @user.microposts.any? %>
    <h3> microposts (<%= @user.microposts.count %>) </h3>
   <ol class = "microposts">
